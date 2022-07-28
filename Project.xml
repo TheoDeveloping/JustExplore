@@ -2,7 +2,15 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
+<<<<<<< HEAD
 	<app title="Caves" file="App" main="Main" version="0.1.0" company="TheoGames" />
+=======
+<<<<<<< HEAD
+	<app title="Caves" file="App" main="Main" version="0.1.0" company="TheoGames" />
+=======
+	<app title="Just Explore" file="Explore" main="Main" version="0.1.0" company="TheoDev" />
+>>>>>>> 6b1228c (added with termux bc i am a fuking pro turi ip ip)
+>>>>>>> c3f8ff3 (a cool commit message)
 
 	<!--The flixel preloader is not accurate in Chrome. You can use it regularly if you embed the swf into a html file
 		or you can set the actual size of your file manually at "FlxPreloaderBase-onUpdate-bytesTotal"-->
@@ -39,7 +47,15 @@
 	<haxelib name="flixel-addons" />
 
 	<!--In case you want to use the ui package-->
+<<<<<<< HEAD
 	<!--<haxelib name="flixel-ui" />-->
+=======
+<<<<<<< HEAD
+	<!--<haxelib name="flixel-ui" />-->
+=======
+	<<haxelib name="flixel-ui" />
+>>>>>>> 6b1228c (added with termux bc i am a fuking pro turi ip ip)
+>>>>>>> c3f8ff3 (a cool commit message)
 
 	<!--In case you want to use nape with flixel-->
 	<!--<haxelib name="nape-haxe4" />-->
