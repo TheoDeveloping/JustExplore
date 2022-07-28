@@ -5,10 +5,32 @@ import flixel.FlxG;
 import flixel.FlxState;
 import flixel.util.FlxColor;
 import flixel.math.FlxPoint;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+import ui.VirtualPadState;
+>>>>>>> 6b1228c (added with termux bc i am a fuking pro turi ip ip)
+>>>>>>> c3f8ff3 (a cool commit message)
 
 class PlayerState extends FlxSprite
 {
     var Player:FlxSprite;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    
+    public var vpad:VirtualPadState;
+    
+	var leftKey:Bool = vpad.buttonLeft.pressed || FlxG.keys.anyPressed([LEFT, A]);
+	var rightKey:Bool = vpad.buttonRight.pressed || FlxG.keys.anyPressed([RIGHT, D]);
+    var upKey:Bool = vpad.buttonUp.pressed || FlxG.keys.anyPressed([UP, W]);
+	var downKey:Bool = vpad.buttonDown.pressed || FlxG.keys.anyPressed([DOWN, S]);
+
+    
+>>>>>>> 6b1228c (added with termux bc i am a fuking pro turi ip ip)
+>>>>>>> c3f8ff3 (a cool commit message)
     private var velocityInt:Float;
     
     public function new(X: Float, Y: Float)
@@ -34,26 +56,73 @@ class PlayerState extends FlxSprite
             velocityInt = 120;
 
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+        /*
+        override function create()
+        {
+            vpad = new FlxVirtualPad(FlxDPadMode.FULL, FlxActionMode.NONE);
+		    add(vpad);
+		    
+		    super.create();
+        }
+        */
+>>>>>>> 6b1228c (added with termux bc i am a fuking pro turi ip ip)
+>>>>>>> c3f8ff3 (a cool commit message)
         override public function update(elapsed:Float)
             {
                 super.update(elapsed);
                 //Move The Characters With The Keys
+<<<<<<< HEAD
                 if (FlxG.keys.pressed.A || FlxG.keys.pressed.LEFT)
+=======
+<<<<<<< HEAD
+                if (FlxG.keys.pressed.A || FlxG.keys.pressed.LEFT)
+=======
+                if (FlxG.keys.anyPressed([LEFT, A]))
+>>>>>>> 6b1228c (added with termux bc i am a fuking pro turi ip ip)
+>>>>>>> c3f8ff3 (a cool commit message)
                     {
                         velocity.x = -velocityInt;
                         animation.play("left");
                     }
+<<<<<<< HEAD
                 else if (FlxG.keys.pressed.D || FlxG.keys.pressed.RIGHT)
+=======
+<<<<<<< HEAD
+                else if (FlxG.keys.pressed.D || FlxG.keys.pressed.RIGHT)
+=======
+                else if (FlxG.keys.anyPressed([RIGHT, D]))
+>>>>>>> 6b1228c (added with termux bc i am a fuking pro turi ip ip)
+>>>>>>> c3f8ff3 (a cool commit message)
                     {
                         velocity.x = velocityInt;
                         animation.play("right");
                     }
+<<<<<<< HEAD
                 else if (FlxG.keys.pressed.W || FlxG.keys.pressed.UP)
+=======
+<<<<<<< HEAD
+                else if (FlxG.keys.pressed.W || FlxG.keys.pressed.UP)
+=======
+                else if (FlxG.keys.anyPressed([UP, W]))
+>>>>>>> 6b1228c (added with termux bc i am a fuking pro turi ip ip)
+>>>>>>> c3f8ff3 (a cool commit message)
                     {
                         velocity.y = -velocityInt;
                         animation.play("up");
                     }
+<<<<<<< HEAD
                 else if (FlxG.keys.pressed.S || FlxG.keys.pressed.DOWN)
+=======
+<<<<<<< HEAD
+                else if (FlxG.keys.pressed.S || FlxG.keys.pressed.DOWN)
+=======
+                else if (FlxG.keys.anyPressed([DOWN, S]))
+>>>>>>> 6b1228c (added with termux bc i am a fuking pro turi ip ip)
+>>>>>>> c3f8ff3 (a cool commit message)
                     {
                         velocity.y = velocityInt;
                         animation.play("down");
