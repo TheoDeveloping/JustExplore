@@ -1,6 +1,14 @@
 # This is a basic workflow to help you get started with Actions
 
+<<<<<<< HEAD
 name: Game Build
+=======
+<<<<<<< HEAD
+name: Game Build
+=======
+name: Just The Build
+>>>>>>> 6b1228c (added with termux bc i am a fuking pro turi ip ip)
+>>>>>>> c3f8ff3 (a cool commit message)
 
 # Controls when the action will run.
 
@@ -128,10 +136,26 @@ jobs:
 
         with:
 
+<<<<<<< HEAD
           name: IndieGame
+=======
+<<<<<<< HEAD
+          name: IndieGame
+=======
+          name: justExplore
+>>>>>>> 6b1228c (added with termux bc i am a fuking pro turi ip ip)
+>>>>>>> c3f8ff3 (a cool commit message)
 
           path: export/release/android/bin/app/build/outputs/apk/debug
 
           
 
+<<<<<<< HEAD
 # Original Yml By LuckyDog7 I Think Lol
+=======
+<<<<<<< HEAD
+# Original Yml By LuckyDog7 I Think Lol
+=======
+# Original Yml By LuckyDog7 I Think Lol
+>>>>>>> 6b1228c (added with termux bc i am a fuking pro turi ip ip)
+>>>>>>> c3f8ff3 (a cool commit message)
