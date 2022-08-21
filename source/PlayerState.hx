@@ -6,16 +6,14 @@ import flixel.FlxState;
 import flixel.util.FlxColor;
 import flixel.math.FlxPoint;
 
-import flixel.ui.FlxVirtualPad;
-
 class PlayerState extends FlxSprite
 {
     var Player:FlxSprite;
     
-	var leftKey:Bool = PlayState.vPad.buttonLeft.pressed || FlxG.keys.anyPressed([LEFT, A]);
-	var rightKey:Bool = PlayState.vpad.buttonRight.pressed || FlxG.keys.anyPressed([RIGHT, D]);
-    var upKey:Bool = PlayState.vpad.buttonUp.pressed || FlxG.keys.anyPressed([UP, W]);
-	var downKey:Bool = PlayState.vpad.buttonDown.pressed || FlxG.keys.anyPressed([DOWN, S]);
+	var leftKey:Bool = PlayState.pad.buttonLeft.pressed || FlxG.keys.anyPressed([LEFT, A]);
+	var rightKey:Bool = PlayState.pad.buttonRight.pressed || FlxG.keys.anyPressed([RIGHT, D]);
+    var upKey:Bool = PlayState.pad.buttonUp.pressed || FlxG.keys.anyPressed([UP, W]);
+	var downKey:Bool = PlayState.pad.buttonDown.pressed || FlxG.keys.anyPressed([DOWN, S]);
 
     private var velocityInt:Float;
     

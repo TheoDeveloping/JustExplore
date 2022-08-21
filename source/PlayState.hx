@@ -8,7 +8,7 @@ import flixel.ui.FlxVirtualPad;
 class PlayState extends FlxState
 {
 	var Player: PlayerState;
-	var vPad:FlxVirtualPad;
+	var pad:FlxVirtualPad;
 
 	override public function create()
 	{
