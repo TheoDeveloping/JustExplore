@@ -48,8 +48,8 @@ jobs:
           haxelib setup ~/haxelib
           haxelib install lime
           haxelib install openfl
-          haxelib install flixel
-          haxelib install flixel-ui
+          haxelib install flixel 4.9.0
+          haxelib install flixel-ui 2.9.0
           haxelib install flixel-addons
 
       - name: Create Version Tag
