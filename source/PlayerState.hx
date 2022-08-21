@@ -10,11 +10,6 @@ class PlayerState extends FlxSprite
 {
     var Player:FlxSprite;
     
-	var leftKey:Bool = PlayState.pad.buttonLeft.pressed || FlxG.keys.anyPressed([LEFT, A]);
-	var rightKey:Bool = PlayState.pad.buttonRight.pressed || FlxG.keys.anyPressed([RIGHT, D]);
-    var upKey:Bool = PlayState.pad.buttonUp.pressed || FlxG.keys.anyPressed([UP, W]);
-	var downKey:Bool = PlayState.pad.buttonDown.pressed || FlxG.keys.anyPressed([DOWN, S]);
-
     private var velocityInt:Float;
     
     public function new(X: Float, Y: Float)
@@ -41,7 +36,7 @@ class PlayerState extends FlxSprite
 
         }
 
-        /*changed to VirtualPadState xd
+        /*changed to playstate xdd
         override function create()
         {
             vpad = new FlxVirtualPad(FlxDPadMode.FULL, FlxActionMode.NONE);
@@ -56,26 +51,25 @@ class PlayerState extends FlxSprite
                 super.update(elapsed);
                 //Move The Characters With The Keys
 
-                if (leftKey)
-
+                if (PlayState.leftKey)
                     {
                         velocity.x = -velocityInt;
                         animation.play("left");
                     }
-                else if (rightKey)
+                else if (PlayState.rightKey)
                     {
                         velocity.x = velocityInt;
                         animation.play("right");
                     }
 
-                else if (upKey)
+                else if (PlayState.upKey)
 
                     {
                         velocity.y = -velocityInt;
                         animation.play("up");
                     }
 
-                else if (downKey)
+                else if (PlayState.downKey)
 
                     {
                         velocity.y = velocityInt;
