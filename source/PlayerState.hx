@@ -3,7 +3,6 @@ package;
 import flixel.FlxSprite;
 import flixel.FlxG;
 import flixel.FlxState;
-import flixel.FlxKeyboard;
 import flixel.util.FlxColor;
 import flixel.math.FlxPoint;
 
