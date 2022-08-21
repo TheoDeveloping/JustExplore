@@ -10,6 +10,13 @@ class PlayerState extends FlxSprite
 {
     var Player:FlxSprite;
     
+    var vPad:FlxVirtualPad;
+    
+    var leftKey:Bool = vPad.buttonLeft.pressed || FlxG.keys.anyPressed([LEFT, A]);
+	var rightKey:Bool = vPad.buttonRight.pressed || FlxG.keys.anyPressed([RIGHT, D]);
+    var upKey:Bool = vPad.buttonUp.pressed || FlxG.keys.anyPressed([UP, W]);
+	var downKey:Bool = vPad.buttonDown.pressed || FlxG.keys.anyPressed([DOWN, S]);
+    
     private var velocityInt:Float;
     
     public function new(X: Float, Y: Float)
@@ -36,15 +43,13 @@ class PlayerState extends FlxSprite
 
         }
 
-        /*changed to playstate xdd
         override function create()
         {
-            vpad = new FlxVirtualPad(FlxDPadMode.FULL, FlxActionMode.NONE);
-		    add(vpad);
-		    
+            vPad = new FlxVirtualPad(FlxDPadMode.FULL, FlxActionMode.NONE);
+		    add(vPad);
+
 		    super.create();
         }
-        */
 
         override public function update(elapsed:Float)
             {
