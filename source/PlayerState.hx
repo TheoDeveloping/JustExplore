@@ -3,6 +3,7 @@ package;
 import flixel.FlxSprite;
 import flixel.FlxG;
 import flixel.FlxState;
+import flixel.FlxKeyboard;
 import flixel.util.FlxColor;
 import flixel.math.FlxPoint;
 
@@ -45,7 +46,7 @@ class PlayerState extends FlxSprite
 
         }
 
-        /*
+        /*changed to VirtualPadState xd
         override function create()
         {
             vpad = new FlxVirtualPad(FlxDPadMode.FULL, FlxActionMode.NONE);

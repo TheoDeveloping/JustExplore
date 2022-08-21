@@ -10,7 +10,6 @@ class VirtualPadState extends FlxVirtualPad
         {
             virtualPad = new FlxVirtualPad(FlxDPadMode.FULL, FlxActionMode.NONE);
 		    add(virtualPad);
-		    
 		    super();
         }
 }

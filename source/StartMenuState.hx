@@ -2,6 +2,7 @@ package;
 
 import flixel.text.FlxText;
 import flixel.FlxG;
+import flixel.FlxKeyboard;
 import flixel.util.FlxColor;
 import flixel.FlxState;
 import flixel.util.FlxTimer;
