@@ -12,12 +12,10 @@ class PlayerState extends FlxSprite
 {
     var Player:FlxSprite;
     
-    public var vpad:FlxVirtualPad;
-    
-	var leftKey:Bool = vpad.buttonLeft.pressed || FlxG.keys.anyPressed([LEFT, A]);
-	var rightKey:Bool = vpad.buttonRight.pressed || FlxG.keys.anyPressed([RIGHT, D]);
-    var upKey:Bool = vpad.buttonUp.pressed || FlxG.keys.anyPressed([UP, W]);
-	var downKey:Bool = vpad.buttonDown.pressed || FlxG.keys.anyPressed([DOWN, S]);
+	var leftKey:Bool = PlayState.vPad.buttonLeft.pressed || FlxG.keys.anyPressed([LEFT, A]);
+	var rightKey:Bool = PlayState.vpad.buttonRight.pressed || FlxG.keys.anyPressed([RIGHT, D]);
+    var upKey:Bool = PlayState.vpad.buttonUp.pressed || FlxG.keys.anyPressed([UP, W]);
+	var downKey:Bool = PlayState.vpad.buttonDown.pressed || FlxG.keys.anyPressed([DOWN, S]);
 
     private var velocityInt:Float;
     
