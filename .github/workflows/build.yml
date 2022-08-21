@@ -46,24 +46,18 @@ jobs:
       - name: Install Haxelib
         run: |
           haxelib setup ~/haxelib
-          haxelib install hxcpp > /dev/null
           haxelib install lime
           haxelib install openfl
-          haxelib --never install flixel
-          haxelib run lime setup flixel
-          haxelib install flixel-tools --quiet
-          haxelib install flixel-ui --quiet
-          haxelib install flixel-addons 2.10.0 --quiet
-          haxelib git polymod https://github.com/MasterEric/polymod.git --quiet
-          haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc --quiet
-          haxelib install actuate 
-          haxelib list
+          haxelib install flixel
+          haxelib install flixel-ui
+          haxelib install flixel-addons
 
       - name: Create Version Tag
         run: echo "${{github.run_id}}" > VERSION
 
       - name: Setup Lime
         run: |
+          haxelib run lime setup flixel -y
           haxelib run lime setup -alias -y
           haxelib run lime config ANDROID_SDK $ANDROID_HOME
           haxelib run lime config ANDROID_NDK_ROOT $ANDROID_NDK_HOME
@@ -78,7 +72,6 @@ jobs:
       - name: Publish Artifact
         uses: actions/upload-artifact@v2.2.4
         with:
-          name: justExploreAndroid
+          name: justExplore
           path: export/release/android/bin/app/build/outputs/apk/debug
           
-    #i get some references (i fuking copied it lol) of luckydog7's funkin-android's port workflow
