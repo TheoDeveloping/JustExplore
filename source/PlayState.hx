@@ -2,7 +2,6 @@ package;
 
 import flixel.FlxState;
 import flixel.FlxG;
-import flixel.ui.FlxVirtualPad;
 
 class PlayState extends FlxState
 {

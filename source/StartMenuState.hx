@@ -87,4 +87,3 @@ class StartMenuState extends FlxState
 
                 }
 }
-            

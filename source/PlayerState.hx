@@ -6,6 +6,8 @@ import flixel.FlxState;
 import flixel.util.FlxColor;
 import flixel.math.FlxPoint;
 
+import flixel.ui.FlxVirtualPad;
+
 class PlayerState extends FlxSprite
 {
     var Player:FlxSprite;
