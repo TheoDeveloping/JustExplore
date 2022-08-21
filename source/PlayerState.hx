@@ -56,25 +56,25 @@ class PlayerState extends FlxSprite
                 super.update(elapsed);
                 //Move The Characters With The Keys
 
-                if (PlayState.leftKey)
+                if (leftKey)
                     {
                         velocity.x = -velocityInt;
                         animation.play("left");
                     }
-                else if (PlayState.rightKey)
+                else if (rightKey)
                     {
                         velocity.x = velocityInt;
                         animation.play("right");
                     }
 
-                else if (PlayState.upKey)
+                else if (upKey)
 
                     {
                         velocity.y = -velocityInt;
                         animation.play("up");
                     }
 
-                else if (PlayState.downKey)
+                else if (downKey)
 
                     {
                         velocity.y = velocityInt;
