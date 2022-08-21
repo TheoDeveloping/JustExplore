@@ -6,13 +6,13 @@ import flixel.FlxState;
 import flixel.util.FlxColor;
 import flixel.math.FlxPoint;
 
-import ui.VirtualPadState;
+import flixel.ui.FlxVirtualPad;
 
 class PlayerState extends FlxSprite
 {
     var Player:FlxSprite;
     
-    public var vpad:VirtualPadState;
+    public var vpad:FlxVirtualPad;
     
 	var leftKey:Bool = vpad.buttonLeft.pressed || FlxG.keys.anyPressed([LEFT, A]);
 	var rightKey:Bool = vpad.buttonRight.pressed || FlxG.keys.anyPressed([RIGHT, D]);
